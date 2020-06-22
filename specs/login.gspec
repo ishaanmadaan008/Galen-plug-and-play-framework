@@ -1,0 +1,38 @@
+@objects
+    sign-in-title          css          .intro h2
+    details                css          .details
+    userName               css          .entry-item:nth-child(1)
+    password               css          .entry-item:nth-child(2)
+    userName_input         xpath        //*[@ id='signInName']
+    password_input         xpath        //*[@ id='password']
+    sign_in                css          #next
+
+
+
+= B2C Login Section =
+
+    @on desktop ,mobile
+        sign-in-title :
+            text    contains    "Sign In "
+
+        userName_input ,password_input :
+            aligned vertically left password_input
+            aligned vertically left sign_in
+            css     font-size   is    "18px"
+            css     padding     is    "11px 40px 11px 35px"
+
+        details :
+            text    contains    "Enter your details below."
+
+        userName ,password :
+            css     position        is    "relative"
+            css     margin-bottom   ~   "26px"   
+
+    @on desktop
+        userName_input ,password_input :
+            css     width       is    "335px"
+
+    @on mobile
+        userName_input ,password_input :
+            css     width       is    "295px"
+
