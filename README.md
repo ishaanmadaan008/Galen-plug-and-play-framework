@@ -5,4 +5,4 @@ For documentation
 http://galenframework.com/
 Command to run Test
 
-galen test ./apps/fleet-galen/tests/ --parallel-tests 4 --htmlreport \"./"
+galen test ./tests/ --parallel-tests 4 --htmlreport \"./"
